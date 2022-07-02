@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Dancing+Script:wght@700&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(127, 246, 255);
+}
+
+#display-Movies {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: grid;
+  justify-content: center;
+  grid-template: 10% /100%;
+  grid-gap: 4rem;
+  padding: 2rem;
+}
+
+.movie-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.comedy-image {
+  width: 80%;
+}
+
+.movie-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #c1c7d0;
+  padding: 1rem;
+}
+
+.movie-div:hover {
+  border: 2px solid aqua;
+  transform: scale(1.06);
+  transition: 300ms ease-in-out;
+  z-index: 1;
+}
+
+#header {
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  background: white;
+  margin: 0;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  top: 0;
+  width: 100%;
+  padding: 0.6rem;
+}
+
+#footer-text {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.fa-heart {
+  color: red;
+  font-size: 2rem;
+}
+
+#logo {
+  border: solid black 0.3rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.menu-link:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+#footer {
+  border-top: solid black 0.25rem;
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  z-index: 3;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-item {
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}
+
+#popup-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c1c7d0;
+  z-index: 2;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(7px);
+}
+
+#details-popup {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  height: max-content;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 16px;
+  z-index: 3;
+  background-color: #c1c7d0;
+  margin: 16px;
+  box-sizing: content-box;
+}
+
+#popup-close-button {
+  box-sizing: content-box;
+  width: fit-content;
+  height: 14px;
+  padding: 13px;
+  justify-self: flex-start;
+  color: red;
+  background-color: aqua;
+  font-size: 1rem;
+  border: none;
+  border-radius: 70%;
+}
+
+#popup-close-button:hover {
+  color: black;
+  background-color: red;
+  cursor: pointer;
+}
+
+#detail-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.movie-div-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.movie-image-detail {
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  #display-Movies {
+    display: grid;
+    justify-content: center;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr/1fr 1fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  .comedy-image {
+    width: 80%;
+  }
+
+  .movie-div {
+    width: 85%;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #details-popup {
+    width: fit-content;
+    max-width: 1156px;
+    margin: 112px auto;
+  }
+
+  .movie-image-detail {
+    width: 60%;
+  }
+
+  .movie-div-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
