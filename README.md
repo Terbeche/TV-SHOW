@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://crystallinebutterfly.github.io/Group-Capstone-1/)
+[Live Demo Link](https://terbeche.github.io/TV-SHOW/)
 
 
 ## Getting Started
