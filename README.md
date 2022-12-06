@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Group-Capstone-1 = 
+# TV-SHOW
 
 > Description the project.
 
@@ -12,7 +12,7 @@
 - GIT, VS-code.
 - Linter
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://terbeche.github.io/TV-SHOW/)
 
